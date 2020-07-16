@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html lang="en">
+        <head>
+                <title> Tic Tac toe </title>
+                <meta charset='UTF-8'></meta>
+                <link rel="stylesheet" href='./main.css'/>
+        </head>
+        <body>
+        <script type='text/javascript' src='./main.js'></script>
+        <p id="Indicator"> The first click will be by O </p>
+
+                <div class="OuterBox" id='board'>     
+                                <div  onclick=handleCellClick(event) class="InputBox" id=1></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=2></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=3></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=4></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=5></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=6></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=7></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=8></div>
+                                <div   onclick=handleCellClick(event) class="InputBox" id=9></div>
+                </div>
+        <button onclick=Undo() class="Undo_event" id="Undo_once" >Undo Last Move</button>
+        <div id='Winner' style="display:none;"></div>
+        <button onclick=Reset() id='Reset' style="display:none;" >Restart Game.</button>
+        </body>
+</html>
